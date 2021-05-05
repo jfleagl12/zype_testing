@@ -15,6 +15,7 @@ if (!class_exists('Themosis')) {
 }
 
 // Hello world. 
+// Adding in another coment.
 
 /**
  * Use statements. Add any useful class import
