@@ -1,0 +1,275 @@
+body .zype_video {
+    width: 100%;
+    margin: 10px auto;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
+}
+
+body .zype_video > .zype_play_sample {
+    display: none;
+}
+
+body .zype_video__wrapper {
+    position: relative;
+    width: 100%;
+    color: #2c3c4c;
+    height: 100%;
+}
+
+body .zype_video__wrapper + section.episode-main {
+    margin-top: 20px;
+}
+
+body .zype_video__wrapper + section.episode-main .head {
+    margin-bottom: 20px;
+}
+
+body .zype_video__wrapper + section.episode-main .head .play-trailer-button button {
+    cursor: pointer;
+    margin: auto;
+    display: inline-block;
+    font-weight: 400;
+    padding: 4px 12px;
+    margin-top: 10px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-left: 10px;
+    height: 100%;
+}
+
+body .zype_video__wrapper + section.episode-main .head h2 {
+    margin-bottom: 0px;
+}
+
+body .zype_video__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.2)));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    z-index: 999;
+    height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    -webkit-transition: height 0.25s cubic-bezier(0, 0, 0.2, 1);
+    transition: height 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
+
+body .zype_video__heading h1 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(100% - 120px);
+    flex: 1 1 calc(100% - 120px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 120px);
+    white-space: nowrap;
+}
+
+body .zype_video__heading .video-preview-close-button-sandbox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-weight: bold !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 36px;
+    padding-left: 1px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+body .zype_video__heading .zype_play_sample {
+    -ms-flex-preferred-size: 120px;
+    flex-basis: 120px;
+    min-width: 120px;
+    text-align: right;
+}
+
+body .zype_video__heading .zype_play_sample a {
+    color: white;
+    text-decoration: underline;
+    font-size: 13px;
+    outline: none;
+}
+
+body .zype_video__wrapper:hover .zype_video__heading {
+    height: 44px;
+}
+
+body .zype_player_container {
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+}
+
+body .zype_player_container .overlay_player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-180deg, rgba(0, 0, 0, .37) 0%, rgba(0, 0, 0, .45) 52%, rgba(0, 0, 0, .82) 100%);
+    padding: 0px;
+    display: flex;
+}
+
+body .zype_player_container .overlay_player .play-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+body .zype_player_container .placeholder {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#zype_video__auth-close {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    color: #aaa;
+    font-weight: bold !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 36px;
+    padding-left: 1px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#zype_video__auth-close:hover {
+    color: #000;
+}
+body .zype_player_container .player-auth-required-content .login-sub-section-title {
+    float: left;
+    margin-right: 5px;
+}
+
+body .zype_player_container .player-auth-required-content .login-sub-section .zype_login-wrapper {
+    border: 0;
+    width: 100%;
+    margin: 0;
+}
+
+body .zype_player_container .player-auth-required-content .login-sub-section .zype_heading {
+    background-color: transparent;
+    border: 0;
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+    padding: 0;
+    text-align: left;
+}
+
+body .zype_player_container .player-auth-required-content .login-sub-section .zype_form__login {
+    padding: 25px 0;
+}
+
+body .zype_player_container .player-auth-required-content .login-sub-section > p {
+    text-align: center;
+    font-size: 14px;
+    color: #606060;
+}
+
+body .zype_player_container .player-auth-required-content .login-sub-section > a {
+    display: inline-block;
+    background-color: #222;
+    border: 0;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1em 2em;
+    text-shadow: none;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+body .zype_player_container .player-auth-required-content .login-sub-section > a:hover {
+    background: #767676;
+}
+
+body .zype_player_container .player-auth-required.zype_modal_open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    overflow-y: auto;
+}
+
+body .zype_player_container .overlay-buttons {
+    overflow: auto;
+    vertical-align: bottom;
+    align-self: flex-end;
+    padding: 20px;
+}
+
+body .zype_player_container .white-button {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border-radius: 2px;
+    border: solid 1px #fff;
+    color: #272424;
+    background: #fff;
+    padding: 10px;
+    width: 150px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+body .zype_player_container .empty-button {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    border-radius: 2px;
+    border: solid 1px #fff;
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+    margin: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+body .zype_player_container .overlay-title {
+    align-self: flex-end;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: .2px;
+    margin: 5px;
+}
+
+/*# sourceMappingURL=single_video.css.map */
